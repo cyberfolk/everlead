@@ -6,6 +6,9 @@ export default {
 </script>
 
 <template>
-  <section>SectionEvents</section>
+  <section>
+    <div class="container">SectionEvents</div>
+    <!-- /.container -->
+  </section>
 </template>
 <style lang="scss" scoped></style>

@@ -6,6 +6,9 @@ export default {
 </script>
 
 <template>
-  <section>SectionStats</section>
+  <section>
+    <div class="container">SectionStats</div>
+    <!-- /.container -->
+  </section>
 </template>
 <style lang="scss" scoped></style>

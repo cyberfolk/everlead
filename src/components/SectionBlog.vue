@@ -9,6 +9,9 @@ export default {
 </script>
 
 <template>
-  <section>SectionBlog</section>
+  <section>
+    <div class="container">SectionBlog</div>
+    <!-- /.container -->
+  </section>
 </template>
 <style lang="scss" scoped></style>

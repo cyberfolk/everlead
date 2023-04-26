@@ -6,7 +6,10 @@ export default {
 </script>
 
 <template>
-  <footer>PageFooter</footer>
+  <footer>
+    <div class="container">PageFooter</div>
+    <!-- /.container -->
+  </footer>
 </template>
 
 <style lang="scss" scoped></style>
