@@ -10,7 +10,10 @@ export default {
 
 <template>
   <section>
-    <div class="container">SectionBlog</div>
+    <div class="container">
+      <h2>Latest news</h2>
+      <ItemSlider />
+    </div>
     <!-- /.container -->
   </section>
 </template>
