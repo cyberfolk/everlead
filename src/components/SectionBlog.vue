@@ -1,11 +1,9 @@
 <script>
-import ItemSlider from "./components/ItemSlider.vue";
-import ItemNav from "./components/ItemNav.vue";
+import ItemSlider from "./components/SectionBlog.vue";
 export default {
-  name: "PageHeader ",
+  name: "SectionBlog",
   components: {
     ItemSlider,
-    ItemNav,
   },
 };
 </script>

@@ -1,12 +1,11 @@
 <script>
 export default {
-  name: "PageFooter ",
+  name: "SectionEvents",
   components: {},
 };
 </script>
 
 <template>
-  <footer></footer>
+  <header></header>
 </template>
-
 <style lang="scss" scoped></style>
