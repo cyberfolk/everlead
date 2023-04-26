@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "SectionSpecialities",
+  name: "SectionPhoto",
   components: {},
 };
 </script>
 
 <template>
-  <section>SectionSpecialities</section>
+  <section>SectionPhoto</section>
 </template>
 <style lang="scss" scoped></style>

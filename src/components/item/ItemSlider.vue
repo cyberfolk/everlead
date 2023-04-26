@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "PageNav",
+  name: "ItemSlider",
   components: {},
 };
 </script>
 
 <template>
-  <header></header>
+  <div>slider</div>
 </template>
 <style lang="scss" scoped></style>

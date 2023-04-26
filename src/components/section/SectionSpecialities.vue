@@ -1,11 +1,13 @@
 <script>
 export default {
-  name: "ItemSlider",
+  name: "SectionSpecialities",
   components: {},
 };
 </script>
 
 <template>
-  <header></header>
+  <section>
+    <h2>Our specialities</h2>
+  </section>
 </template>
 <style lang="scss" scoped></style>

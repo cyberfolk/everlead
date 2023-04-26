@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "SectionVideo",
+  name: "ItemNav",
   components: {},
 };
 </script>
 
 <template>
-  <section>SectionVideo</section>
+  <nav>navbar</nav>
 </template>
 <style lang="scss" scoped></style>

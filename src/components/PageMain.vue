@@ -1,13 +1,13 @@
 <script>
-import SectionSpecialities from "./SectionSpecialities.vue";
-import SectionTeam from "./SectionTeam.vue";
-import SectionEvents from "./SectionEvents.vue";
-import SectionStats from "./SectionStats.vue";
-import SectionBlog from "./SectionBlog.vue";
-import SectionTestimonials from "./SectionTestimonials.vue";
-import SectionPhoto from "./SectionPhoto.vue";
-import SectionContact from "./SectionContact.vue";
-import SectionClients from "./SectionClients.vue";
+import SectionSpecialities from "./section/SectionSpecialities.vue";
+import SectionTeam from "./section/SectionTeam.vue";
+import SectionEvents from "./section/SectionEvents.vue";
+import SectionStats from "./section/SectionStats.vue";
+import SectionBlog from "./section/SectionBlog.vue";
+import SectionTestimonials from "./section/SectionTestimonials.vue";
+import SectionPhoto from "./section/SectionPhoto.vue";
+import SectionContact from "./section/SectionContact.vue";
+import SectionClients from "./section/SectionClients.vue";
 export default {
   name: "PageMain",
   components: {
@@ -25,10 +25,9 @@ export default {
 </script>
 <template>
   <main>
-    PageMain
     <SectionSpecialities />
     <SectionTeam />
-    <SectionEvents class="bg_dark" />
+    <SectionEvents />
     <SectionStats />
     <SectionBlog />
     <SectionTestimonials />

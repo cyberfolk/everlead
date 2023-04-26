@@ -1,5 +1,5 @@
 <script>
-import ItemSlider from "./ItemSlider.vue";
+import ItemSlider from "../item/ItemSlider.vue";
 export default {
   name: "SectionTeam",
   components: {
