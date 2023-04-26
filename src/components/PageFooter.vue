@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <footer></footer>
+  <footer>PageFooter</footer>
 </template>
 
 <style lang="scss" scoped></style>

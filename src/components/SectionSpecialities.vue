@@ -6,6 +6,6 @@ export default {
 </script>
 
 <template>
-  <section></section>
+  <section>SectionSpecialities</section>
 </template>
 <style lang="scss" scoped></style>

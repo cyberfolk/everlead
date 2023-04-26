@@ -1,6 +1,6 @@
 <script>
-import ItemSlider from "./components/ItemSlider.vue";
-import ItemNav from "./components/ItemNav.vue";
+import ItemSlider from "./ItemSlider.vue";
+import ItemNav from "./ItemNav.vue";
 export default {
   name: "PageHeader ",
   components: {
@@ -11,6 +11,6 @@ export default {
 </script>
 
 <template>
-  <header></header>
+  <header>PageHeader</header>
 </template>
 <style lang="scss" scoped></style>

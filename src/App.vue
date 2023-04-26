@@ -1,12 +1,12 @@
 <script>
-import SiteHeader from "./components/PageHeader .vue";
-import SiteMain from "./components/PageMain.vue";
-import SiteFooter from "./components/PageFooter.vue";
+import PageHeader from "./components/PageHeader.vue";
+import PageMain from "./components/PageMain.vue";
+import PageFooter from "./components/PageFooter.vue";
 export default {
   components: {
-    SiteHeader,
-    SiteMain,
-    SiteFooter,
+    PageHeader,
+    PageMain,
+    PageFooter,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <script>
-import ItemSlider from "./components/ItemSlider.vue";
+import ItemSlider from "./ItemSlider.vue";
 export default {
   name: "SectionTeam",
   components: {
@@ -9,6 +9,6 @@ export default {
 </script>
 
 <template>
-  <section></section>
+  <section>SectionTeam</section>
 </template>
 <style lang="scss" scoped></style>
