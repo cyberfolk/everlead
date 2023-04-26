@@ -15,6 +15,9 @@
 .text_primary {
   color: $primary;
 }
+.text_secondary {
+  color: $secondary;
+}
 
 .bg_darkless {
   background-color: $darkless;
@@ -30,4 +33,13 @@
 }
 .bg_primary {
   background-color: $primary;
+}
+.bg_secondary {
+  background-color: $secondary;
+}
+
+.spacer {
+  border-top: 2px solid $primary;
+  margin-top: 1rem;
+  width: 100px;
 }
