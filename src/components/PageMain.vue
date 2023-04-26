@@ -5,8 +5,9 @@ import SectionEvents from "./components/SectionEvents.vue";
 import SectionStats from "./components/SectionStats.vue";
 import SectionBlog from "./components/SectionBlog.vue";
 import SectionTestimonials from "./components/SectionTestimonials.vue";
-import SectionVideo from "./components/SectionVideo.vue";
+import SectionPhoto from "./components/SectionPhoto.vue";
 import SectionContact from "./components/SectionContact.vue";
+import SectionClients from "./components/SectionClients.vue";
 export default {
   name: "PageMain",
   components: {
@@ -16,8 +17,9 @@ export default {
     SectionStats,
     SectionBlog,
     SectionTestimonials,
-    SectionVideo,
+    SectionPhoto,
     SectionContact,
+    SectionClients,
   },
 };
 </script>
