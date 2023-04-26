@@ -28,7 +28,7 @@ export default {
     PageMain
     <SectionSpecialities />
     <SectionTeam />
-    <SectionEvents />
+    <SectionEvents class="bg_dark" />
     <SectionStats />
     <SectionBlog />
     <SectionTestimonials />

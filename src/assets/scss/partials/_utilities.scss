@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+.text_darkless {
+  color: $darkless;
+}
+.text_dark {
+  color: $dark;
+}
+.text_light {
+  color: $light;
+}
+.text_lighter {
+  color: $lighter;
+}
+.text_primary {
+  color: $primary;
+}
+
+.bg_darkless {
+  background-color: $darkless;
+}
+.bg_dark {
+  background-color: $dark;
+}
+.bg_light {
+  background-color: $light;
+}
+.bg_lighter {
+  background-color: $lighter;
+}
+.bg_primary {
+  background-color: $primary;
+}
