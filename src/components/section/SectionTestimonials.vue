@@ -1,13 +1,13 @@
 <script>
+import testimonials from "../../data/section/testimonials.json";
 import ItemSlider from "../item/ItemSlider.vue";
 export default {
   name: "SectionTestimonials",
-  components: {
-    ItemSlider,
-  },
+  components: { ItemSlider },
   data() {
     return {
       percentage: 33,
+      testimonials: testimonials,
     };
   },
 };
@@ -15,14 +15,14 @@ export default {
 
 <template>
   <section id="ms_testimonials" class="bg_darkless">
-    <div class="bg_text text_dark">Testimonials.</div>
+    <div class="bg_text text_dark"></div>
     <!-- /.bg_text -->
     <div class="ms_big_container">
       <div class="ms_medium_container">
-        <div class="ma_testimonial m-auto text-center">
-          <img class="border border-3 rounded-circle border-white m-3" src="../../assets/img/section/testimonials/01.png" alt="" />
-          <h5 class="text_light m-4">Cynthia Clark</h5>
-          <p class="w-50 m-auto text-center pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis voluptatum distinctio reprehenderit aliquam voluptate beatae porro qui adipisci provident.</p>
+        <div class="m-auto text-center">
+          <img class="border border-3 rounded-circle border-white m-3" :src="testimonials[0].path" alt="" />
+          <h5 class="text_light m-4">{{ testimonials[0].name }}</h5>
+          <p class="w-50 m-auto text-center pb-4">{{ testimonials[0].text }}</p>
           <div class="d-flex align-items-center justify-content-center">
             <div class="text_light">01</div>
             <div class="bar">
@@ -44,7 +44,8 @@ export default {
 
 section {
   position: relative;
-  .bg_text {
+  .bg_text::after {
+    content: "Testimonials.";
     text-align: center;
     font-size: 200px !important;
     position: absolute;
