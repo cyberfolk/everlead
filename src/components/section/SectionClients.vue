@@ -23,4 +23,8 @@ export default {
   </section>
   <!-- /#ms_team -->
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#ms_team {
+  padding-bottom: 8rem;
+}
+</style>
