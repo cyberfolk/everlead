@@ -1,21 +1,23 @@
 <script>
 import ItemSlider from "./item/ItemSlider.vue";
 import ItemNav from "./item/ItemNav.vue";
+import InfoTeam from "./item/InfoTeam.vue";
 export default {
   name: "PageHeader ",
   components: {
     ItemSlider,
     ItemNav,
+    InfoTeam,
   },
 };
 </script>
 
 <template>
-  <header>
+  <header class="bg_light">
     <ItemNav />
     <div class="ms_big_container">
       <div class="ms_medium_container">
-        <div><h1>Our Team.</h1></div>
+        <InfoTeam />
         <ItemSlider />
       </div>
       <!-- /.ms_medium_container -->
@@ -23,4 +25,10 @@ export default {
     <!-- /.ms_big_container -->
   </header>
 </template>
-<style lang="scss" scoped></style>
+
+<style lang="scss" scoped>
+header {
+  height: 500px;
+  position: relative;
+}
+</style>
