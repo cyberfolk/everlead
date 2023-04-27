@@ -22,7 +22,7 @@ export default {
     <!-- /.ms_card_date_cell -->
     <div class="ms_card_info_cell">
       <div class="ms_card_info_name">
-        <h6>{{ title }}</h6>
+        <h5>{{ title }}</h5>
       </div>
       <ul class="fa-ul ms-4">
         <li class="fs_08">

@@ -14,7 +14,7 @@ export default {
       <div class="ms_medium_container">
         <div class="row row-cols-2 g-5">
           <div class="col">
-            <h2>Creative Leader.</h2>
+            <h3>Creative Leader<span class="text_primary">.</span></h3>
             <div class="spacer pb-3"></div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium eveniet quae pariatur? Quisquam, a soluta! Excepturi, error velit. Impedit, quia accusantium? Aliquid, fuga amet? Aut alias repellat perspiciatis neque quaerat vitae velit, adipisci corrupti atque!</p>
             <span class="fs_08 fw-bold text_dark">READ MORE</span>

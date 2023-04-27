@@ -20,7 +20,7 @@ export default {
           </div>
           <!-- /.col -->
           <div class="col">
-            <h2>Contact us</h2>
+            <h2>Contact us<span class="text_primary">.</span></h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, non.</p>
             <div class="spacer mb-5"></div>
             <div class="d-flex gap-3 mb-4">

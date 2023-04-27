@@ -12,8 +12,8 @@ export default {
 <template>
   <div class="ms_stat pb-4">
     <div class="d-flex justify-content-between">
-      <h6>{{ name }}</h6>
-      <h6>{{ percentage }}%</h6>
+      <h5>{{ name }}</h5>
+      <h5>{{ percentage }}%</h5>
     </div>
     <div class="bar">
       <div :style="{ width: percentage + '%' }" class="bar up"></div>

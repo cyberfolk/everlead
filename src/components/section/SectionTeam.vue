@@ -14,7 +14,7 @@ export default {
       <div class="ms_medium_container">
         <ItemSlider class="slider_tmp" />
         <div class="ms_info_member bg_lighter">
-          <h2>Nome team member</h2>
+          <h3>Nome team member</h3>
           <p>Role team member</p>
           <div class="spacer pt-3"></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem vero accusamus provident, repellendus veritatis consequuntur eius soluta alias aut?</p>

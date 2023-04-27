@@ -15,7 +15,7 @@ export default {
     <div class="ms_big_container">
       <div class="ms_medium_container">
         <div class="text-center">
-          <h2>Latest news</h2>
+          <h2>Latest news<span class="text_primary">.</span></h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <div class="spacer m-auto pb-5"></div>
         </div>
