@@ -53,7 +53,7 @@ export default {
         position: absolute;
         top: 50%;
         right: 0;
-        transform: translate(0, -50%); //stanlate H
+        transform: translate(0, -50%); //center H
         padding: 5rem 3rem;
         width: 60%;
         svg path {
