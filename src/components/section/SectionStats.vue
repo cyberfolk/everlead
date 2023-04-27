@@ -6,17 +6,21 @@ export default {
 </script>
 
 <template>
-  <section>
-    <div class="container">
-      <div class="row row-cols-2">
-        <div class="col"><h2>Creative Leader.</h2></div>
-        <!-- /.col -->
-        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolorem?</div>
-        <!-- /.col -->
+  <section id="ms_stats">
+    <div class="ms_big_container">
+      <div class="ms_medium_container">
+        <div class="row row-cols-2">
+          <div class="col"><h2>Creative Leader.</h2></div>
+          <!-- /.col -->
+          <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolorem?</div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
       </div>
-      <!-- /.row -->
+      <!-- /.ms_medium_container -->
     </div>
-    <!-- /.container -->
+    <!-- /.ms_big_container -->
   </section>
+  <!-- /#ms_stats -->
 </template>
 <style lang="scss" scoped></style>

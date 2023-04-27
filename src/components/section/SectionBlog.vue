@@ -9,12 +9,16 @@ export default {
 </script>
 
 <template>
-  <section>
-    <div class="container">
-      <h2>Latest news</h2>
-      <ItemSlider />
+  <section id="ms_blog">
+    <div class="ms_big_container">
+      <div class="ms_medium_container">
+        <h2>Latest news</h2>
+        <ItemSlider />
+      </div>
+      <!-- /.ms_medium_container -->
     </div>
-    <!-- /.container -->
+    <!-- /.ms_big_container -->
   </section>
+  <!-- /#ms_blog -->
 </template>
 <style lang="scss" scoped></style>

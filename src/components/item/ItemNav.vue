@@ -6,8 +6,8 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar bg-light navbar-expand-lg px-5">
-    <div class="container-fluid">
+  <nav class="navbar bg-light navbar-expand-lg">
+    <div class="ms_big_container d-flex">
       <a class="navbar-brand" href="#">
         <img width="150" src="../../assets/img/logo/black.png" alt="Logo" class="d-inline-block align-text-top" />
       </a>

@@ -13,11 +13,14 @@ export default {
 <template>
   <header>
     <ItemNav />
-    <div class="container">
-      <div><h1>Our Team.</h1></div>
-      <ItemSlider />
+    <div class="ms_big_container">
+      <div class="ms_medium_container">
+        <div><h1>Our Team.</h1></div>
+        <ItemSlider />
+      </div>
+      <!-- /.ms_medium_container -->
     </div>
-    <!-- /.container -->
+    <!-- /.ms_big_container -->
   </header>
 </template>
 <style lang="scss" scoped></style>

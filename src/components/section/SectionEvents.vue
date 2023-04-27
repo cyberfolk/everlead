@@ -6,11 +6,16 @@ export default {
 </script>
 
 <template>
-  <section>
-    <div class="container">SectionEvents</div>
-    <!-- /.container -->
+  <section id="ms_events">
+    <div class="ms_big_container">
+      <div class="ms_medium_container">SectionEvents</div>
+      <!-- /.ms_medium_container -->
+    </div>
+    <!-- /.ms_big_container -->
   </section>
+  <!-- /#ms_events -->
 </template>
+
 <style lang="scss" scoped>
 section {
   background-image: url("../../assets/img/section/events/bg.jpg");
