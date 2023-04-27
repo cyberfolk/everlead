@@ -56,6 +56,7 @@ export default {
         transform: translate(0, -50%); //center H
         padding: 5rem 3rem;
         width: 60%;
+        z-index: 1;
         svg path {
           fill: $primary;
         }

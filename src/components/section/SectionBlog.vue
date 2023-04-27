@@ -39,6 +39,7 @@ export default {
         <ItemSlider />
       </div>
       <!-- /.ms_medium_container -->
+      <img class="dot" src="../../assets/img/icon/o-dot.svg" alt="" />
     </div>
     <!-- /.ms_big_container -->
   </section>
@@ -49,5 +50,18 @@ export default {
 #ms_blog {
   background-color: $light;
   padding: 8rem 0;
+  .ms_big_container {
+    position: relative;
+    .row {
+      position: relative;
+      z-index: 1;
+    }
+    .dot {
+      position: absolute;
+      top: -40%;
+      left: 0;
+      z-index: 0;
+    }
+  }
 }
 </style>

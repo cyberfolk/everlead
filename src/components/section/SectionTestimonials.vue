@@ -9,10 +9,11 @@ export default {
 </script>
 
 <template>
-  <section class="bg_darkless">
+  <section id="ms_testimonials" class="bg_darkless">
     <div class="bg_text text_dark">Testimonials.</div>
     <!-- /.bg_text -->
   </section>
+  <!-- /.ms_testimonials -->
 </template>
 
 <style lang="scss" scoped>
