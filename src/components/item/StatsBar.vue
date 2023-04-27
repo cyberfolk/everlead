@@ -32,8 +32,6 @@ export default {
 }
 .bar.up {
   cursor: pointer;
-  border-radius: 0.5rem;
-  height: 0.3rem;
   top: 0;
   left: 0;
   position: absolute;
