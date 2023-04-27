@@ -1,40 +1,26 @@
 <script>
+import specialities from "../../data/section/specialities.json";
 export default {
   name: "SectionSpecialities",
   components: {},
+  data() {
+    return { specialities: specialities };
+  },
 };
 </script>
 
 <template>
   <section id="ms_specialities" class="bg_light">
     <div class="ms_big_container bg_lighter">
-      <div class="ms_medium_container">
-        <h2 class="text-center">Our specialities</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, vitae.</p>
-        <div class="spacer m-auto"></div>
+      <div class="ms_medium_container text-center">
+        <h2 class="">Our specialities<span class="text_primary">.</span></h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, vitae.</p>
+        <div class="spacer m-auto pb-5"></div>
         <div class="row row-cols-4">
-          <div class="col text-center">
-            <img src="../../assets/img/section/specialities/knowing.svg" alt="" />
-            <h5>Knowing</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <!-- /.col -->
-          <div class="col text-center">
-            <img src="../../assets/img/section/specialities/selling.svg" alt="" />
-            <h5>Selling</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-          </div>
-          <!-- /.col -->
-          <div class="col text-center">
-            <img src="../../assets/img/section/specialities/learning.svg" alt="" />
-            <h5>Learning</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <!-- /.col -->
-          <div class="col text-center">
-            <img src="../../assets/img/section/specialities/contact.svg" alt="" />
-            <h5>Contact</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="col" v-for="s in specialities">
+            <img :src="s.path" alt="" />
+            <h5 class="pt-4">{{ s.title }}</h5>
+            <p>{{ s.text }}</p>
           </div>
           <!-- /.col -->
         </div>
@@ -46,10 +32,11 @@ export default {
   </section>
   <!-- /#ms_specialities -->
 </template>
+
 <style lang="scss" scoped>
 .ms_big_container {
   padding: 5rem 0;
   position: relative;
-  top: -50px;
+  top: -50px; //to move it up like in the screenshot reference
 }
 </style>

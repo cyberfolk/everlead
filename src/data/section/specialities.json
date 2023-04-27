@@ -1,0 +1,22 @@
+[
+  {
+    "path": "./src/assets/img/section/specialities/knowing.svg",
+    "title": "Knowing",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing."
+  },
+  {
+    "path": "./src/assets/img/section/specialities/selling.svg",
+    "title": "Selling",
+    "text": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+  },
+  {
+    "path": "./src/assets/img/section/specialities/learning.svg",
+    "title": "Learning",
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing."
+  },
+  {
+    "path": "./src/assets/img/section/specialities/contact.svg",
+    "title": "Contact",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+  }
+]
