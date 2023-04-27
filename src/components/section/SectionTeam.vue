@@ -9,14 +9,14 @@ export default {
 </script>
 
 <template>
-  <section id="ms_team">
+  <section id="ms_team" class="bg_light">
     <div class="ms_big_container">
       <div class="ms_medium_container">
-        <ItemSlider class="x" />
-        <div class="ms_info_member">
+        <ItemSlider class="slider_tmp" />
+        <div class="ms_info_member bg_lighter">
           <h2>Nome team member</h2>
           <p>Role team member</p>
-          <div class="spacer"></div>
+          <div class="spacer pt-3"></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem vero accusamus provident, repellendus veritatis consequuntur eius soluta alias aut?</p>
           <span>
             <svg id="icon_facebook" width="30px" viewBox="0 0 67 67"><path d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z" /></svg>
@@ -24,9 +24,9 @@ export default {
             <svg id="icon_twitter" width="30px" viewBox="0 0 30 30"><path d="M22.1,10.2c-0.5,0.3-1.1,0.4-1.7,0.5c0.6-0.4,1.1-1,1.3-1.7c-0.6,0.3-1.2,0.6-1.9,0.8c-0.6-0.6-1.3-1-2.1-1	c-1.6,0-3,1.4-3,3.2c0,0.2,0,0.5,0.1,0.7c-2.5-0.1-4.7-1.4-6.1-3.3c-0.3,0.4-0.4,1-0.4,1.6c0,1.1,0.5,2.1,1.3,2.6	c-0.5,0-1-0.2-1.3-0.4v0.1c0,1.5,1,2.8,2.4,3.1c-0.2,0.1-0.5,0.1-0.8,0.1c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.5,2.2,2.8,2.2	c-1,0.8-2.3,1.3-3.7,1.3c-0.2,0-0.4,0-0.7-0.1c1.3,0.9,2.9,1.5,4.6,1.5c5.4,0,8.4-4.8,8.4-9c0-0.1,0-0.3,0-0.4	C21.2,11.4,21.7,10.8,22.1,10.2z M14.9,1.5c7.5,0,13.5,6,13.5,13.5s-6,13.5-13.5,13.5S1.4,22.5,1.4,15S7.4,1.5,14.9,1.5z" /></svg>
           </span>
         </div>
-        <img class="dot" src="../../assets/img/icon/o-dot.svg" alt="" />
       </div>
       <!-- /.ms_medium_container -->
+      <img class="dot" src="../../assets/img/icon/o-dot.svg" alt="" />
     </div>
     <!-- /.ms_big_container -->
   </section>
@@ -35,28 +35,37 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/scss/partials/variables" as *;
-section {
-  background-color: $light;
-  padding: 8rem 0;
-  position: relative;
-}
-.ms_info_member {
-  padding: 5rem 3rem;
-  width: 50%;
-}
-svg path {
-  fill: $primary;
-}
-
-.x {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-}
-
-.dot {
-  position: absolute;
-  top: 0;
-  right: 100px;
+#ms_team {
+  padding: 2rem 0;
+  .ms_big_container {
+    position: relative;
+    padding: 6rem 0;
+    .ms_medium_container {
+      position: relative;
+      .slider_tmp {
+        height: 500px;
+        width: 50%;
+        top: 0;
+        left: 0;
+        background-color: red;
+      }
+      .ms_info_member {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%); //stanlate H
+        padding: 5rem 3rem;
+        width: 60%;
+        svg path {
+          fill: $primary;
+        }
+      }
+    }
+    .dot {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 </style>

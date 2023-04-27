@@ -6,8 +6,8 @@ export default {
 </script>
 
 <template>
-  <section id="ms_specialities">
-    <div class="ms_big_container">
+  <section id="ms_specialities" class="bg_light">
+    <div class="ms_big_container bg_lighter">
       <div class="ms_medium_container">
         <h2 class="text-center">Our specialities</h2>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, vitae.</p>
@@ -46,4 +46,10 @@ export default {
   </section>
   <!-- /#ms_specialities -->
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.ms_big_container {
+  padding: 5rem 0;
+  position: relative;
+  top: -50px;
+}
+</style>
