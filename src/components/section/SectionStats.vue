@@ -1,9 +1,11 @@
 <script>
+import stats from "../../data/section/stats.json";
 import StatsBar from "../item/StatsBar.vue";
 export default {
   name: "SectionStats",
-  components: {
-    StatsBar,
+  components: { StatsBar },
+  data() {
+    return { stats: stats };
   },
 };
 </script>
@@ -21,10 +23,7 @@ export default {
           </div>
           <!-- /.col -->
           <div class="col">
-            <StatsBar :name="'Mentorship'" :percentage="78" />
-            <StatsBar :name="'Education'" :percentage="95" />
-            <StatsBar :name="'Learning'" :percentage="65" />
-            <StatsBar :name="'Motivation'" :percentage="83" />
+            <StatsBar v-for="s in stats" :name="s.name" :percentage="s.percentage" />
           </div>
           <!-- /.col -->
         </div>
