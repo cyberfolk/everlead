@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Melbourne Coaching",
+    "duration": "9:00 am - 5:00 pm",
+    "date": "Jan 07, 2022",
+    "location": "Cambridge, MA 02138, USA"
+  },
+  {
+    "title": "New York Coaching",
+    "date": "Jan 11, 2022",
+    "duration": "9:00 am - 5:00 pm",
+    "location": "Cambridge, MA 02138, USA"
+  },
+  {
+    "title": "London Coaching",
+    "date": "Jan 21, 2022",
+    "duration": "9:00 am - 5:00 pm",
+    "location": "Cambridge, MA 02138, USA"
+  }
+]
