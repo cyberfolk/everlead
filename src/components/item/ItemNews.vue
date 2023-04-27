@@ -9,17 +9,12 @@ export default {
     title: String,
     text: String,
   },
-  methods: {
-    srcPath(path) {
-      return `src/assets/img/section/blog/${path}`;
-    },
-  },
 };
 </script>
 
 <template>
   <div class="ms_news">
-    <img class="w-100 pb-4" :src="srcPath(path)" alt="" />
+    <img class="w-100 pb-4" :src="path" alt="" />
     <div class="fs_08 pb-2">
       <i class="text_primary fa-regular fa-clock pe-1"></i>
       <span class="pe-2">{{ date }}</span>
