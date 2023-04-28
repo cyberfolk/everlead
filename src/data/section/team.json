@@ -1,0 +1,20 @@
+[
+  {
+    "path": "./src/assets/img/section/team/01.jpg",
+    "name": "Cynthia Clark",
+    "role": "Founder and Executive Director",
+    "text": "Lorem dolor sit amet, adipisicing elit. Est provident, officiis voluptatum consectetur reprehenderit aliquam voluptate beatae porro qui adipisci provident.!"
+  },
+  {
+    "path": "./src/assets/img/section/team/02.jpg",
+    "name": "Poul Red",
+    "role": "Designer",
+    "text": "Lorem distinctio dolor sit consectetur amet, reprehenderit adipisicing adipisci elit. Est, voluptatum distinctio reprehenderit aliquam voluptate beatae porro adipisc!"
+  },
+  {
+    "path": "./src/assets/img/section/team/03.jpg",
+    "name": "Bob Smith",
+    "role": "Fronte End Developer",
+    "text": "Lorem ipsum dolor sit amet, qui consectetur adipisicing elit. Est, ipsum officiis officiis voluptatum distinctio aliquam voluptate beatae porro ipsum qui provident.!"
+  }
+]

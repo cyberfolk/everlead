@@ -1,9 +1,34 @@
 <script>
-import ItemSlider from "../item/ItemSlider.vue";
+import team from "../../data/section/team.json";
 export default {
   name: "SectionTeam",
-  components: {
-    ItemSlider,
+  components: {},
+  data() {
+    return {
+      autoPlay: null,
+      activeImage: 0,
+      photos: team,
+    };
+  },
+  methods: {
+    next() {
+      this.activeImage++;
+      if (this.activeImage == this.photos.length) {
+        this.activeImage = 0;
+      }
+    },
+    prev() {
+      this.activeImage--;
+      if (this.activeImage < 0) {
+        this.activeImage = this.photos.length - 1;
+      }
+    },
+    play() {
+      this.autoPlay = setInterval(this.next, 3000);
+    },
+    stop() {
+      this.autoPlay = clearInterval(this.autoPlay);
+    },
   },
 };
 </script>
@@ -12,12 +37,19 @@ export default {
   <section id="ms_team" class="bg_light">
     <div class="ms_big_container">
       <div class="ms_medium_container">
-        <ItemSlider class="slider_tmp" />
+        <div class="slider">
+          <img class="h-100 w-100" :src="photos[activeImage].path" alt="" />
+          <div class="position-absolute bottom-0">
+            <button class="bg_primary text_lighter border-0 ps-3 py-3" @click="prev()">&LongLeftArrow;</button>
+            <button class="bg_primary text_lighter border-0 pe-3 py-3" @click="next()">&LongRightArrow;</button>
+          </div>
+        </div>
+        <!-- /.slide -->
         <div class="ms_info_member bg_lighter">
-          <h3>Nome team member</h3>
-          <p>Role team member</p>
+          <h3>{{ photos[activeImage].name }}</h3>
+          <p>{{ photos[activeImage].role }}</p>
           <div class="spacer pt-3"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem vero accusamus provident, repellendus veritatis consequuntur eius soluta alias aut?</p>
+          <p>{{ photos[activeImage].text }}</p>
           <span>
             <svg id="icon_facebook" width="30px" viewBox="0 0 67 67"><path d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z" /></svg>
             <svg id="icon_linkedin" width="30px" viewBox="0 0 67 67"><path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" /></svg>
@@ -42,12 +74,15 @@ export default {
     padding: 6rem 0;
     .ms_medium_container {
       position: relative;
-      .slider_tmp {
+      img {
+        object-fit: cover;
+      }
+      .slider {
+        position: relative;
         height: 500px;
         width: 50%;
         top: 0;
         left: 0;
-        background-color: red;
       }
       .ms_info_member {
         position: absolute;
