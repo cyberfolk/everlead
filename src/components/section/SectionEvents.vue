@@ -11,11 +11,11 @@ export default {
 </script>
 
 <template>
-  <section id="ms_events">
+  <section id="ms_events ">
     <div class="ms_big_container">
       <div class="ms_medium_container">
         <div class="ms_card bg_lighter">
-          <div class="ms_card_title shadow-sm px-5 py-4"><h4>Upcoming Events</h4></div>
+          <div class="ms_card_title shadow-sm px-5 py-4 bg_light"><h4>Upcoming Events</h4></div>
           <CardEvent v-for="e in events" :title="e.title" :duration="e.duration" :date="e.date" :location="e.location" />
         </div>
         <!-- /.ms_card -->

@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div class="ms_card_event d-flex px-5 py-4 border-bottom">
+  <div class="ms_card_event d-flex px-5 py-4 border-bottom bg_light">
     <div class="ms_card_cell pe-3">
       <div class="square p-2 text-center bg_primary text_lighter">
         <h6 class="mb-0">{{ luxonDate.toFormat("dd") }}</h6>
@@ -45,4 +45,12 @@ export default {
   <!-- /.ms_card_event -->
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "../../assets/scss/partials/variables" as *;
+.ms_card_event:hover {
+  background-color: $lighter;
+  h5 {
+    color: $primary;
+  }
+}
+</style>
