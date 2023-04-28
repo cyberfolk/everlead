@@ -5,7 +5,7 @@ import SectionEvents from "./section/SectionEvents.vue";
 import SectionStats from "./section/SectionStats.vue";
 import SectionBlog from "./section/SectionBlog.vue";
 import SectionTestimonials from "./section/SectionTestimonials.vue";
-import SectionPhoto from "./section/SectionPhoto.vue";
+import SectionPhotos from "./section/SectionPhotos.vue";
 import SectionContact from "./section/SectionContact.vue";
 import SectionClients from "./section/SectionClients.vue";
 export default {
@@ -17,7 +17,7 @@ export default {
     SectionStats,
     SectionBlog,
     SectionTestimonials,
-    SectionPhoto,
+    SectionPhotos,
     SectionContact,
     SectionClients,
   },
@@ -31,7 +31,7 @@ export default {
     <SectionStats />
     <SectionBlog />
     <SectionTestimonials />
-    <SectionPhoto />
+    <SectionPhotos />
     <SectionContact />
     <SectionClients />
   </main>
