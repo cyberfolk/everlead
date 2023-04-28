@@ -26,8 +26,9 @@ export default {
 <style lang="scss" scoped>
   .ms_team_info {
     position: absolute;
+    left: 0;
     top: 50%;
-    width: 30%;
+    width: 40%;
     transform: translate(0, -50%); //center H
     button{
       font-size: 0.8rem;

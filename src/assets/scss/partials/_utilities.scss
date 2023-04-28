@@ -54,3 +54,11 @@
   left: 50%;
   top: 50%;
 }
+
+.h_centering {
+  transform: translate(-50%, 0);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+}
