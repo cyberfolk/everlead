@@ -1,12 +1,12 @@
 <script>
-import navItems from "../data/nav-item.json";
 export default {
   name: "PageHeader",
+  props: {
+    navItems: Object,
+    logoPath: String,
+  },
   data() {
-    return {
-      navItems: navItems,
-      activeLink: 0,
-    };
+    return { activeLink: 0 };
   },
   methods: {
     active(i) {
