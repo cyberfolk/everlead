@@ -28,7 +28,9 @@ export default {
     <div class="ms_big_container">
       <div class="ms_medium_container">
         <div class="d-flex justify-content-between">
-          <img v-for="(client, i) in clients" :src="srcHover(i)" @mouseover="hover[i] = true" @mouseleave="hover[i] = false" alt="" />
+          <a href="#" v-for="(client, i) in clients">
+            <img :src="srcHover(i)" @mouseover="hover[i] = true" @mouseleave="hover[i] = false" alt="" />
+          </a>
         </div>
       </div>
       <!-- /.ms_medium_container -->
