@@ -1,7 +1,8 @@
 <script>
+import ItemButton from "../item/ItemButton.vue";
 export default {
   name: "SectionContact",
-  components: {},
+  components: { ItemButton },
 };
 </script>
 
@@ -28,10 +29,7 @@ export default {
               <input type="text" class="form-control" placeholder="Your Email" />
             </div>
             <textarea class="form-control mb-5" rows="3" placeholder="Write a message..."></textarea>
-            <button class="btn rounded-0 bg_primary text_lighter d-flex align-items-center p-0 py-2">
-              <div class="px-4 fs_08 ">SEND</div>
-              <div class="px-2 border-start  border-1 text_lighter fs-6">&#10230</div>
-            </button>
+            <ItemButton :text="'SEND'" :color="'primary'" />
           </div>
           <!-- /.col -->
         </div>
