@@ -1,4 +1,5 @@
 <script>
+import SectionJumbotron from "./section/SectionJumbotron.vue";
 import SectionSpecialities from "./section/SectionSpecialities.vue";
 import SectionTeam from "./section/SectionTeam.vue";
 import SectionEvents from "./section/SectionEvents.vue";
@@ -11,6 +12,7 @@ import SectionClients from "./section/SectionClients.vue";
 export default {
   name: "PageMain",
   components: {
+    SectionJumbotron,
     SectionSpecialities,
     SectionTeam,
     SectionEvents,
@@ -25,6 +27,7 @@ export default {
 </script>
 <template>
   <main>
+    <SectionJumbotron />
     <SectionSpecialities />
     <SectionTeam />
     <SectionEvents />

@@ -1,58 +1,74 @@
 <script>
-import photoHeader from "../data/photo-Header.json";
-import ItemNav from "./item/ItemNav.vue";
-import InfoTeam from "./item/InfoTeam.vue";
+import navItems from "../data/nav-item.json";
 export default {
-  name: "PageHeader ",
-  components: {
-    ItemNav,
-    InfoTeam,
-  },
+  name: "PageHeader",
   data() {
     return {
-      activeImage: 0,
-      photos: photoHeader,
+      navItems: navItems,
+      activeLink: 0,
     };
   },
   methods: {
-    next() {
-      this.activeImage++;
-      if (this.activeImage == this.photos.length) {
-        this.activeImage = 0;
-      }
-    },
-    prev() {
-      this.activeImage--;
-      if (this.activeImage < 0) {
-        this.activeImage = this.photos.length - 1;
-      }
+    active(i) {
+      this.activeLink = i;
     },
   },
 };
 </script>
 
 <template>
-  <header class="bg_light">
-    <ItemNav />
-    <img class="h-100 w-100" :src="photos[activeImage].path" alt="" />
-    <div class="ms_big_container h_centering">
-      <button class="ms_arrow bg-transparent border-0 start-0" @click="prev()">&LongLeftArrow;</button>
-      <button class="ms_arrow bg-transparent border-0 end-0" @click="next()">&LongRightArrow;</button>
-      <div class="ms_medium_container h_centering">
-        <InfoTeam />
+  <header>
+    <nav class="navbar w-100 navbar-expand-lg">
+      <div class="ms_big_container d-flex">
+        <a class="navbar-brand" href="#">
+          <img width="150" src="../assets/img/logo/black.png" alt="Logo" class="d-inline-block align-text-top" />
+        </a>
+        <!-- /.navbar-brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- /.navbar-toggler -->
+        <div class="collapse navbar-collapse justify-content-end" id="main_nav">
+          <ul class="navbar-nav">
+            <li v-for="(item, i) in navItems" class="nav-item">
+              <a class="nav-link" :href="item.path" @click="active(i)" :class="activeLink === i ? 'active' : ''">{{ item.name }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- /.ms_medium_container -->
-    </div>
-    <!-- /.ms_big_container -->
+    </nav>
   </header>
 </template>
 
 <style lang="scss" scoped>
-header {
-  height: 900px;
-  position: relative;
-  img {
-    object-fit: cover;
+@use "../assets/scss/partials/variables" as *;
+nav {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+  .nav-item {
+    font-weight: 700;
+    color: $dark !important;
+    padding-right: 1.6rem;
+    font-size: 0.8rem;
+    align-self: center;
+    position: relative; // to use the active class
+
+    .active {
+      color: $primary;
+    }
+    .active:after {
+      content: "\27F6";
+      position: absolute;
+      left: -24px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      top: 5%;
+    }
   }
 }
 </style>
