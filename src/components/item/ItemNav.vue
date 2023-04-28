@@ -1,7 +1,18 @@
 <script>
+import navItems from "../../data/nav-item.json";
 export default {
   name: "ItemNav",
-  components: {},
+  data() {
+    return {
+      navItems: navItems,
+      activeLink: 0,
+    };
+  },
+  methods: {
+    active(i) {
+      this.activeLink = i;
+    },
+  },
 };
 </script>
 
@@ -18,23 +29,8 @@ export default {
       <!-- /.navbar-toggler -->
       <div class="collapse navbar-collapse justify-content-end" id="main_nav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOMES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PAGES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BLOG</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">SHOP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">EVENTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">ELEMENTS</a>
+          <li v-for="(item, i) in navItems" class="nav-item">
+            <a class="nav-link" :href="item.path" @click="active(i)" :class="activeLink === i ? 'active' : ''">{{ item.name }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -44,6 +40,7 @@ export default {
     </div>
   </nav>
 </template>
+
 <style lang="scss" scoped>
 @use "../../assets/scss/partials/variables" as *;
 
