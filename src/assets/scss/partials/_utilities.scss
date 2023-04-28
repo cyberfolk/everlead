@@ -68,3 +68,19 @@
   top: 50%;
   font-size: 1.6rem;
 }
+
+.bar {
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 0;
+  height: 0.3rem;
+  background-color: $lightless;
+}
+.bar.up {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: $primary;
+}
