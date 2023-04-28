@@ -1,5 +1,5 @@
 <script>
-import photoHeader from "../../data/photo-Header.json";
+import photoHeader from "../../data/section/jumbotron.json";
 import InfoTeam from "../item/InfoTeam.vue";
 export default {
   name: "PageHeader ",
