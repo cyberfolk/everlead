@@ -47,3 +47,10 @@
 .fs_08 {
   font-size: 0.8rem;
 }
+
+.hv_centering {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
