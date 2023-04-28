@@ -25,7 +25,7 @@ export default {
     prev() {
       this.activeImage--;
       if (this.activeImage < 0) {
-        this.activeImage = this.images.length - 1;
+        this.activeImage = this.photos.length - 1;
       }
     },
   },
@@ -35,10 +35,10 @@ export default {
 <template>
   <header class="bg_light">
     <ItemNav />
-    <img class="h-100 w-100" src="../assets/img/header/02.jpg" alt="" />
+    <img class="h-100 w-100" :src="photos[activeImage].path" alt="" />
     <div class="ms_big_container h_centering">
-      <button class="ms_arrow bg-transparent border-0 start-0">&LongLeftArrow;</button>
-      <button class="ms_arrow bg-transparent border-0 end-0">&LongRightArrow;</button>
+      <button class="ms_arrow bg-transparent border-0 start-0" @click="prev()">&LongLeftArrow;</button>
+      <button class="ms_arrow bg-transparent border-0 end-0" @click="next()">&LongRightArrow;</button>
       <div class="ms_medium_container h_centering">
         <InfoTeam />
       </div>
