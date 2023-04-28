@@ -9,7 +9,24 @@ export default {
     ItemNews,
   },
   data() {
-    return { blog: blog };
+    return {
+      activeNews: 0,
+      blog: blog,
+    };
+  },
+  methods: {
+    next() {
+      this.activeNews += 3;
+      if (this.activeNews > this.blog.length) {
+        this.activeNews = 0;
+      }
+    },
+    prev() {
+      this.activeNews -= 3;
+      if (this.activeNews < 0) {
+        this.activeNews = Math.floor(this.blog.length / 3) * 3;
+      }
+    },
   },
 };
 </script>
@@ -17,6 +34,8 @@ export default {
 <template>
   <section id="ms_blog" class="bg_light">
     <div class="ms_big_container">
+      <button class="ms_arrow bg-transparent border-0 start-0" @click="prev()">&LongLeftArrow;</button>
+      <button class="ms_arrow bg-transparent border-0 end-0" @click="next()">&LongRightArrow;</button>
       <div class="ms_medium_container">
         <div class="text-center">
           <h2>Latest news<span class="text_primary">.</span></h2>
@@ -24,10 +43,9 @@ export default {
           <div class="spacer m-auto pb-5"></div>
         </div>
         <div class="row row-cols-3 g-5">
-          <div v-for="news in blog.slice(0, 3)" class="col">
-            <ItemNews :path="news.path" :date="news.date" :author="news.author" :title="news.title" :text="news.text" />
-          </div>
-          <!-- /.col -->
+          <ItemNews :news="blog[activeNews]" />
+          <ItemNews :news="blog[activeNews + 1]" />
+          <ItemNews :news="blog[activeNews + 2]" />
         </div>
         <!-- /.row -->
       </div>
