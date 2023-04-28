@@ -5,7 +5,6 @@ export default {
   components: {},
   data() {
     return {
-      autoPlay: null,
       activeImage: 0,
       photos: team,
     };
