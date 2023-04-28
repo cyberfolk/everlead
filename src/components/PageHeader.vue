@@ -54,10 +54,5 @@ header {
   img {
     object-fit: cover;
   }
-  .ms_arrow {
-    position: absolute;
-    top: 50%;
-    font-size: 1.6rem;
-  }
 }
 </style>
