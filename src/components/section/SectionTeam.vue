@@ -22,12 +22,6 @@ export default {
         this.activeImage = this.photos.length - 1;
       }
     },
-    play() {
-      this.autoPlay = setInterval(this.next, 3000);
-    },
-    stop() {
-      this.autoPlay = clearInterval(this.autoPlay);
-    },
   },
 };
 </script>
