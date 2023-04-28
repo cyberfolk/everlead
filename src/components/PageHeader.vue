@@ -1,11 +1,9 @@
 <script>
-import ItemSlider from "./item/ItemSlider.vue";
 import ItemNav from "./item/ItemNav.vue";
 import InfoTeam from "./item/InfoTeam.vue";
 export default {
   name: "PageHeader ",
   components: {
-    ItemSlider,
     ItemNav,
     InfoTeam,
   },
@@ -14,11 +12,11 @@ export default {
 
 <template>
   <header class="bg_light">
+    <img class="h-100 w-100" src="../assets/img/header/02.jpg" alt="" />
     <ItemNav />
     <div class="ms_big_container">
       <div class="ms_medium_container">
         <InfoTeam />
-        <ItemSlider />
       </div>
       <!-- /.ms_medium_container -->
     </div>
@@ -28,7 +26,10 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  height: 500px;
+  height: 900px;
   position: relative;
+  img {
+    object-fit: cover;
+  }
 }
 </style>
