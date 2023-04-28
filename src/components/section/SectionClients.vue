@@ -1,7 +1,25 @@
 <script>
+import clients from "../../data/section/clients.json";
 export default {
   name: "SectionClients",
-  components: {},
+  data() {
+    return {
+      clients: clients,
+      hover: [],
+    };
+  },
+  methods: {
+    srcHover(i) {
+      if (this.hover[i] == true) {
+        return clients[i].hover;
+      } else {
+        return clients[i].path;
+      }
+    },
+  },
+  created() {
+    this.clients.forEach((i) => this.hover.push(false));
+  },
 };
 </script>
 
@@ -10,11 +28,7 @@ export default {
     <div class="ms_big_container">
       <div class="ms_medium_container">
         <div class="d-flex justify-content-between">
-          <img src="../../assets/img/section/clients/01.png" alt="" />
-          <img src="../../assets/img/section/clients/02.png" alt="" />
-          <img src="../../assets/img/section/clients/03.png" alt="" />
-          <img src="../../assets/img/section/clients/04.png" alt="" />
-          <img src="../../assets/img/section/clients/05.png" alt="" />
+          <img v-for="(client, i) in clients" :src="srcHover(i)" @mouseover="hover[i] = true" @mouseleave="hover[i] = false" alt="" />
         </div>
       </div>
       <!-- /.ms_medium_container -->

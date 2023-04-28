@@ -1,0 +1,22 @@
+[
+  {
+    "path": "./src/assets/img/section/clients/01.png",
+    "hover": "./src/assets/img/section/clients/01-b.png"
+  },
+  {
+    "path": "./src/assets/img/section/clients/02.png",
+    "hover": "./src/assets/img/section/clients/02-b.png"
+  },
+  {
+    "path": "./src/assets/img/section/clients/03.png",
+    "hover": "./src/assets/img/section/clients/03-b.png"
+  },
+  {
+    "path": "./src/assets/img/section/clients/04.png",
+    "hover": "./src/assets/img/section/clients/04-b.png"
+  },
+  {
+    "path": "./src/assets/img/section/clients/05.png",
+    "hover": "./src/assets/img/section/clients/05-b.png"
+  }
+]
