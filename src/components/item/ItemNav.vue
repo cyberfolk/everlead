@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar bg-light navbar-expand-lg">
+  <nav class="navbar w-100 navbar-expand-lg">
     <div class="ms_big_container d-flex">
       <a class="navbar-brand" href="#">
         <img width="150" src="../../assets/img/logo/black.png" alt="Logo" class="d-inline-block align-text-top" />
@@ -43,24 +43,29 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/scss/partials/variables" as *;
-.nav-item {
-  font-weight: 700;
-  color: $dark !important;
-  padding-right: 1.6rem;
-  font-size: 0.8rem;
-  align-self: center;
-  position: relative; // to use the active class
+nav {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  .nav-item {
+    font-weight: 700;
+    color: $dark !important;
+    padding-right: 1.6rem;
+    font-size: 0.8rem;
+    align-self: center;
+    position: relative; // to use the active class
 
-  .active {
-    color: $primary;
-  }
-  .active:after {
-    content: "\27F6";
-    position: absolute;
-    left: -36px;
-    font-size: 1.6rem;
-    font-weight: 500;
-    top: -10%;
+    .active {
+      color: $primary;
+    }
+    .active:after {
+      content: "\27F6";
+      position: absolute;
+      left: -24px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      top: 5%;
+    }
   }
 }
 </style>
