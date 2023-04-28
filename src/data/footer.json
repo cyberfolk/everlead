@@ -1,0 +1,34 @@
+{
+  "top": [
+    {
+      "title": "About",
+      "text": "We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success."
+    },
+    {
+      "title": "Twitter",
+      "list": ["@aliasadadm Hi @aliasadadm , can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agent... https://t.co/vk57k1S9bS", "@HencvSefaaoaky1 Check out our theme Gioia which has all necessary elements to build a multi vendor marketplace. https://t.co/c9BIYxZBIL"]
+    },
+    {
+      "title": "Important Links",
+      "list": ["About me", "About us", "Language packs", "Become a coach", "Monthly events"]
+    },
+    {
+      "title": "Contact me",
+      "list": [
+        {
+          "text": "@452 BigBlue Street, NY 10013",
+          "icon": "fa-solid fa-location-dot text_primary"
+        },
+        {
+          "text": "(315) 5512-2579",
+          "icon": "fa-solid fa-phone text_primary"
+        },
+        {
+          "text": "everlea@mikado.com",
+          "icon": "fa-regular fa-envelope text_primary"
+        }
+      ]
+    }
+  ],
+  "bottom": "Copyright Everlead &#169;MikadoThemes"
+}

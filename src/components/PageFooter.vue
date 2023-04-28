@@ -1,7 +1,10 @@
 <script>
 export default {
   name: "PageFooter ",
-  components: {},
+  props: {
+    top: Object,
+    bottom: String,
+  },
 };
 </script>
 
@@ -12,9 +15,9 @@ export default {
         <div class="ms_medium_container">
           <div class="row row-cols-4">
             <div class="col">
-              <h5>About</h5>
+              <h5>{{ top[0].title }}</h5>
               <div class="spacer pb-3"></div>
-              <p class="fs_08">We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success.</p>
+              <p class="fs_08">{{ top[0].text }}</p>
               <span class="d-flex gap-1">
                 <svg id="icon_facebook" width="25px" viewBox="0 0 67 67"><path d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z" /></svg>
                 <svg id="icon_linkedin" width="25px" viewBox="0 0 67 67"><path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" /></svg>
@@ -23,47 +26,33 @@ export default {
             </div>
             <!-- /.col -->
             <div class="col">
-              <h5>Twitter</h5>
+              <h5>{{ top[1].title }}</h5>
               <div class="spacer pb-3"></div>
               <ul class="fa-ul ms-4">
-                <li>
+                <li v-for="text in top[1].list">
                   <span class="fa-li"><i class="fa-brands fa-twitter text_primary"></i></span>
-                  <p class="mb-1">@aliasadadm Hi @aliasadadm , can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agent... https://t.co/vk57k1S9bS</p>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fa-brands fa-twitter text_primary"></i></span>
-                  <p>@HencvSefaaoaky1 Check out our theme Gioia which has all necessary elements to build a multi vendor marketplace. https://t.co/c9BIYxZBIL</p>
+                  <p class="mb-1">{{ text }}</p>
                 </li>
               </ul>
             </div>
             <!-- /.col -->
             <div class="col">
-              <h5>Important Links</h5>
+              <h5>{{ top[2].title }}</h5>
               <div class="spacer pb-3"></div>
               <ul class="list-unstyled">
-                <li class="pb-1"><span>About me</span></li>
-                <li class="pb-1"><span>About us</span></li>
-                <li class="pb-1"><span>Language packs</span></li>
-                <li class="pb-1"><span>Become a coach</span></li>
-                <li class="pb-1"><span>Monthly events</span></li>
+                <li v-for="text in top[2].list" class="pb-1">
+                  <span>{{ text }}</span>
+                </li>
               </ul>
             </div>
             <!-- /.col -->
             <div class="col">
-              <h5>Contact me</h5>
+              <h5>{{ top[3].title }}</h5>
               <div class="spacer pb-3"></div>
               <ul class="fa-ul ms-4">
-                <li>
-                  <span class="fa-li"><i class="fa-solid fa-location-dot text_primary"></i></span>
-                  <p class="mb-2">@452 BigBlue Street, NY 10013</p>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fa-solid fa-phone text_primary"></i></span>
-                  <p class="mb-2">(315) 5512-2579</p>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fa-regular fa-envelope text_primary"></i></span>
-                  <p class="mb-2">everlea@mikado.com</p>
+                <li v-for="item in top[3].list">
+                  <span class="fa-li"><i :class="item.icon"></i></span>
+                  <p class="mb-2">{{ item.text }}</p>
                 </li>
               </ul>
               <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mt-5">
