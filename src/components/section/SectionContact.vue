@@ -44,20 +44,30 @@ export default {
 <style lang="scss" scoped>
 #ms_contact {
   padding: 8rem 0;
+
   .ms_map_container {
     position: relative;
+
+    .ms_map {
+      width: 100%;
+
+    }
+
     .ms_plus {
       position: absolute;
       display: block;
     }
+
     .ms_1 {
       top: 35%;
       left: 24%;
     }
+
     .ms_2 {
       top: 22.5%;
       left: 52.5%;
     }
+
     .ms_3 {
       top: 72.5%;
       left: 85%;

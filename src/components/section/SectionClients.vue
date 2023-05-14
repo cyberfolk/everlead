@@ -27,10 +27,11 @@ export default {
   <section id="ms_team" class="bg_light">
     <div class="ms_big_container">
       <div class="ms_medium_container">
-        <div class="d-flex justify-content-between">
-          <a href="#" v-for="(client, i) in clients">
-            <img :src="srcHover(i)" @mouseover="hover[i] = true" @mouseleave="hover[i] = false" alt="" />
-          </a>
+        <div class="row row-cols-3 row-cols-lg-5 g-5">
+          <div class="col" v-for="(client, i) in clients">
+            <a href="#"> <img :src="srcHover(i)" @mouseover="hover[i] = true" @mouseleave="hover[i] = false" alt="" /> </a>
+          </div>
+          <!-- /.col -->
         </div>
       </div>
       <!-- /.ms_medium_container -->

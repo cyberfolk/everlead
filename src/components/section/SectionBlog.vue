@@ -1,11 +1,9 @@
 <script>
 import blog from "../../data/section/blog.json";
-import ItemSlider from "../item/ItemSlider.vue";
 import ItemNews from "../item/ItemNews.vue";
 export default {
   name: "SectionBlog",
   components: {
-    ItemSlider,
     ItemNews,
   },
   data() {
@@ -59,14 +57,18 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/scss/partials/variables" as *;
+
 #ms_blog {
   padding: 8rem 0;
+
   .ms_big_container {
     position: relative;
+
     .row {
       position: relative;
       z-index: 1;
     }
+
     .dot {
       position: absolute;
       top: -40%;
@@ -74,5 +76,4 @@ export default {
       z-index: 0;
     }
   }
-}
-</style>
+}</style>

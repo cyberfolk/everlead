@@ -1,9 +1,8 @@
 <script>
 import testimonials from "../../data/section/testimonials.json";
-import ItemSlider from "../item/ItemSlider.vue";
 export default {
   name: "SectionTestimonials",
-  components: { ItemSlider },
+  components: {},
   data() {
     return {
       activeImage: 0,
@@ -67,21 +66,28 @@ export default {
 
 section {
   position: relative;
+
   .bg_text {
     font-size: 200px;
     line-height: 1;
     font-family: "Libre Baskerville", serif;
+    width: 100%;
+    overflow-x: hidden;
+
   }
+
   .ms_big_container {
     position: relative;
     padding: 8rem 0;
     z-index: 1;
   }
+
   .bar {
     height: 0.1rem;
     background-color: $secondary;
     width: 10%;
   }
+
   .bar.up {
     background-color: $light;
   }
