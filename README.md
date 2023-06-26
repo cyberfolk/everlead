@@ -1,7 +1,9 @@
-# Vue 3 + Vite
+# Everlead
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Si treatta della replica di un template di WordPress.
 
-## Recommended IDE Setup
+Progetto creato tramite **Vite** e **Vue.js**.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Il layout è suiddiviso in 3 macro-componenti: PageHeader, PageMain, PageFooter, e a sua volta il PageMain è formato da una specifica componente per ogni diversa sezione del template.
+
+Le Voci delle sezioni popolate dinamicamente, tramite props, e opportune strutture dati.
