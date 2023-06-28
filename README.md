@@ -1,9 +1,12 @@
 # Everlead
 
-Si treatta della replica di un template di WordPress.
+**Initial commit**: 26/04/23
 
-Progetto creato tramite **Vite** e **Vue.js**.
+**Tecnologie:** vite, vue.js, js, axios, css e bootstrap.
 
-Il layout è suiddiviso in 3 macro-componenti: PageHeader, PageMain, PageFooter, e a sua volta il PageMain è formato da una specifica componente per ogni diversa sezione del template.
+Ecco a voi Everlead, il mio progetto di metà corso per Boolean, la riproduzione di un tema di WordPress.
 
-Le Voci delle sezioni popolate dinamicamente, tramite props, e opportune strutture dati.
+La chiave del progetto è stato individuare gli elementi che si ripetevano per isolarli e replicarli in appositi componenti, inoltre il template dato che era composto da diverse sezioni ho creato per ciascuna di esse un apposito componente da popolare in maniera dinamica, tramite props, e opportune strutture dati.
+
+🖇️ Repository:
+https://github.com/cyberfolk/everlead.git
