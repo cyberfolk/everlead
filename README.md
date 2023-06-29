@@ -2,7 +2,7 @@
 
 **Initial commit**: 26/04/23
 
-**Tecnologie:** vite, vue.js, js, axios, css e bootstrap.
+**Tecnologie:** Vite, Vue.js, Javascript, Axios, HTML, CSS, SASS e Bootstrap.
 
 Ecco a voi Everlead, il mio progetto di metà corso per Boolean, la riproduzione di un tema di WordPress.
 
